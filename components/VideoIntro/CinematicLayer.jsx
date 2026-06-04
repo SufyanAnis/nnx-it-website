@@ -83,7 +83,7 @@ function CinematicLayer({ className }) {
 
     const warm = new THREE.Color(0xff8a3d); // warm orange
     const white = new THREE.Color(0xffffff);
-    const blue = new THREE.Color(0x6fa8ff); // soft monitor blue glow
+    const ember = new THREE.Color(0xff5a2a); // deep amber accent
 
     for (let i = 0; i < COUNT; i++) {
       const i3 = i * 3;
@@ -91,10 +91,10 @@ function CinematicLayer({ className }) {
       positions[i3 + 1] = (Math.random() - 0.5) * 36;
       positions[i3 + 2] = (Math.random() - 0.5) * 30;
 
-      // Mostly warm/white, a few cool blue accents
+      // Warm orange / white / amber — no cool tones, matches reference warmth
       const r = Math.random();
       const col =
-        r < 0.6 ? warm.clone() : r < 0.9 ? white.clone() : blue.clone();
+        r < 0.55 ? warm.clone() : r < 0.85 ? white.clone() : ember.clone();
       col.lerp(white, Math.random() * 0.35);
       colors[i3] = col.r;
       colors[i3 + 1] = col.g;

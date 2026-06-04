@@ -20,9 +20,9 @@ export default function About() {
       id="about"
       className="relative flex min-h-screen w-full items-center justify-center overflow-hidden px-5 sm:px-8 md:px-10 py-20"
     >
-      {/* Soft decorative orbs in the corners */}
-      <div className="pointer-events-none absolute -top-10 -left-10 h-56 w-56 rounded-full bg-[#3a4a66]/30 blur-[80px]" />
-      <div className="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#2b5cff]/15 blur-[100px]" />
+      {/* Soft decorative orbs in the corners (warm/magenta to match accent) */}
+      <div className="pointer-events-none absolute -top-10 -left-10 h-56 w-56 rounded-full bg-[#BE4C00]/20 blur-[80px]" />
+      <div className="pointer-events-none absolute bottom-0 right-0 h-72 w-72 rounded-full bg-[#B600A8]/15 blur-[100px]" />
 
       {/* Center content */}
       <div className="relative z-10 flex flex-col items-center gap-10 sm:gap-14 md:gap-16 text-center">
